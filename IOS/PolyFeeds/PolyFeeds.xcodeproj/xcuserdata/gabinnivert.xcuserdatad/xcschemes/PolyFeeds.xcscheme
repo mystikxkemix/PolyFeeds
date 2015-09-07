@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0CBC145E1B9D939F00D1F9B8"
-               BuildableName = "Test-IBeacons.app"
-               BlueprintName = "Test-IBeacons"
-               ReferencedContainer = "container:Test-IBeacons.xcodeproj">
+               BlueprintIdentifier = "0C5C8F631B9DC4D3009A377D"
+               BuildableName = "PolyFeeds.app"
+               BlueprintName = "PolyFeeds"
+               ReferencedContainer = "container:PolyFeeds.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0CBC14771B9D93A000D1F9B8"
-               BuildableName = "Test-IBeaconsTests.xctest"
-               BlueprintName = "Test-IBeaconsTests"
-               ReferencedContainer = "container:Test-IBeacons.xcodeproj">
+               BlueprintIdentifier = "0C5C8F7C1B9DC4D3009A377D"
+               BuildableName = "PolyFeedsTests.xctest"
+               BlueprintName = "PolyFeedsTests"
+               ReferencedContainer = "container:PolyFeeds.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0CBC14771B9D93A000D1F9B8"
-               BuildableName = "Test-IBeaconsTests.xctest"
-               BlueprintName = "Test-IBeaconsTests"
-               ReferencedContainer = "container:Test-IBeacons.xcodeproj">
+               BlueprintIdentifier = "0C5C8F7C1B9DC4D3009A377D"
+               BuildableName = "PolyFeedsTests.xctest"
+               BlueprintName = "PolyFeedsTests"
+               ReferencedContainer = "container:PolyFeeds.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0CBC145E1B9D939F00D1F9B8"
-            BuildableName = "Test-IBeacons.app"
-            BlueprintName = "Test-IBeacons"
-            ReferencedContainer = "container:Test-IBeacons.xcodeproj">
+            BlueprintIdentifier = "0C5C8F631B9DC4D3009A377D"
+            BuildableName = "PolyFeeds.app"
+            BlueprintName = "PolyFeeds"
+            ReferencedContainer = "container:PolyFeeds.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0CBC145E1B9D939F00D1F9B8"
-            BuildableName = "Test-IBeacons.app"
-            BlueprintName = "Test-IBeacons"
-            ReferencedContainer = "container:Test-IBeacons.xcodeproj">
+            BlueprintIdentifier = "0C5C8F631B9DC4D3009A377D"
+            BuildableName = "PolyFeeds.app"
+            BlueprintName = "PolyFeeds"
+            ReferencedContainer = "container:PolyFeeds.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,10 +95,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0CBC145E1B9D939F00D1F9B8"
-            BuildableName = "Test-IBeacons.app"
-            BlueprintName = "Test-IBeacons"
-            ReferencedContainer = "container:Test-IBeacons.xcodeproj">
+            BlueprintIdentifier = "0C5C8F631B9DC4D3009A377D"
+            BuildableName = "PolyFeeds.app"
+            BlueprintName = "PolyFeeds"
+            ReferencedContainer = "container:PolyFeeds.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

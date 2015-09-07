@@ -1,6 +1,6 @@
 //
-//  Test_IBeaconsTests.m
-//  Test-IBeaconsTests
+//  PolyFeedsTests.m
+//  PolyFeedsTests
 //
 //  Created by Gabin NIVERT on 07/09/2015.
 //  Copyright (c) 2015 Gabin NIVERT. All rights reserved.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface Test_IBeaconsTests : XCTestCase
+@interface PolyFeedsTests : XCTestCase
 
 @end
 
-@implementation Test_IBeaconsTests
+@implementation PolyFeedsTests
 
 - (void)setUp {
     [super setUp];

@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Test-IBeacons.xcscheme</key>
+		<key>PolyFeeds.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0CBC145E1B9D939F00D1F9B8</key>
+		<key>0C5C8F631B9DC4D3009A377D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0CBC14771B9D93A000D1F9B8</key>
+		<key>0C5C8F7C1B9DC4D3009A377D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

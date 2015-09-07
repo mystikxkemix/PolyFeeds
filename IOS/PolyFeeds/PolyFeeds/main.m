@@ -1,6 +1,6 @@
 //
 //  main.m
-//  Test-IBeacons
+//  PolyFeeds
 //
 //  Created by Gabin NIVERT on 07/09/2015.
 //  Copyright (c) 2015 Gabin NIVERT. All rights reserved.
