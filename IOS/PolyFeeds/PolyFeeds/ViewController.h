@@ -10,6 +10,11 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)Login:(id)sender;
+
+- (IBAction)Pass:(id)sender;
+
+- (IBAction)Singin:(id)sender;
 
 @end
 

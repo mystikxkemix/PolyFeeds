@@ -22,16 +22,27 @@
                                 <state key="normal" title="Sing in ">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="Sing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Uq-un-Wut"/>
+                                    <action selector="Singin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0KN-Il-IKr"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Pass" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ggu-yB-psM">
                                 <rect key="frame" x="252" y="308" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="Pass:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="89T-J6-uZv"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Login" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tyT-I2-nVP">
                                 <rect key="frame" x="252" y="207" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="Login:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="d65-JA-VDI"/>
+                                    <action selector="Pass:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="pEP-XK-dgD"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PolyFeeds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAO-G9-u26">
                                 <rect key="frame" x="181" y="47" width="239" height="92"/>
