@@ -14,7 +14,6 @@
 		0C5C8F751B9DC4D3009A377D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C5C8F741B9DC4D3009A377D /* Images.xcassets */; };
 		0C5C8F781B9DC4D3009A377D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C5C8F761B9DC4D3009A377D /* LaunchScreen.xib */; };
 		0C5C8F841B9DC4D3009A377D /* PolyFeedsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C8F831B9DC4D3009A377D /* PolyFeedsTests.m */; };
-		0C664F671B9EE22E008ADE32 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C664F661B9EE22E008ADE32 /* Logo.png */; };
 		0C664F6D1B9EE8AF008ADE32 /* Logo_58.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C664F6A1B9EE8AF008ADE32 /* Logo_58.png */; };
 		0C664F6E1B9EE8AF008ADE32 /* Logo_80.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C664F6B1B9EE8AF008ADE32 /* Logo_80.png */; };
 		0C664F6F1B9EE8AF008ADE32 /* Logo_120.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C664F6C1B9EE8AF008ADE32 /* Logo_120.png */; };
@@ -44,7 +43,6 @@
 		0C5C8F7D1B9DC4D3009A377D /* PolyFeedsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PolyFeedsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C5C8F821B9DC4D3009A377D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C5C8F831B9DC4D3009A377D /* PolyFeedsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PolyFeedsTests.m; sourceTree = "<group>"; };
-		0C664F661B9EE22E008ADE32 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = IOS/Logo.png; sourceTree = "<group>"; };
 		0C664F6A1B9EE8AF008ADE32 /* Logo_58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_58.png; sourceTree = "<group>"; };
 		0C664F6B1B9EE8AF008ADE32 /* Logo_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_80.png; sourceTree = "<group>"; };
 		0C664F6C1B9EE8AF008ADE32 /* Logo_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_120.png; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 				0C664F6A1B9EE8AF008ADE32 /* Logo_58.png */,
 				0C664F6B1B9EE8AF008ADE32 /* Logo_80.png */,
 				0C664F6C1B9EE8AF008ADE32 /* Logo_120.png */,
-				0C664F661B9EE22E008ADE32 /* Logo.png */,
 				0C5C8F681B9DC4D3009A377D /* Info.plist */,
 				0C5C8F691B9DC4D3009A377D /* main.m */,
 			);
@@ -212,7 +209,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C664F6E1B9EE8AF008ADE32 /* Logo_80.png in Resources */,
-				0C664F671B9EE22E008ADE32 /* Logo.png in Resources */,
 				0C5C8F731B9DC4D3009A377D /* Main.storyboard in Resources */,
 				0C5C8F781B9DC4D3009A377D /* LaunchScreen.xib in Resources */,
 				0C664F6F1B9EE8AF008ADE32 /* Logo_120.png in Resources */,
