@@ -1,6 +1,7 @@
 package oliva.polytech.polyfeeds;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -105,9 +106,17 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
+            Intent intentMyAccount = new Intent(getApplicationContext(), SettingsActivity.class);
+            startActivity(intentMyAccount);
+            return true;
+        } else  if (id == R.id.signin_settings) {
+            //Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
+            Intent intentMyAccount = new Intent(getApplicationContext(), LoginActivity.class);
+            startActivity(intentMyAccount);
             return true;
         }
+
         if (id == R.id.action_example) {
             switch(num) {
                 case 1:
