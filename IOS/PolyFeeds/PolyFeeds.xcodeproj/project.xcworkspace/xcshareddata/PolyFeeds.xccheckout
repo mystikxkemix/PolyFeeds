@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5339A059-44FC-4808-B31E-6753BDE3A95C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PolyFeeds</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D71D38EF5DC0D76F8131C55645D5FD0F4B573D59</key>
+		<string>https://github.com/mystikxkemix/PolyFeeds.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>IOS/PolyFeeds/PolyFeeds.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D71D38EF5DC0D76F8131C55645D5FD0F4B573D59</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mystikxkemix/PolyFeeds.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D71D38EF5DC0D76F8131C55645D5FD0F4B573D59</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D71D38EF5DC0D76F8131C55645D5FD0F4B573D59</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PolyFeeds</string>
+		</dict>
+	</array>
+</dict>
+</plist>

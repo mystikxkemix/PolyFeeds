@@ -14,6 +14,9 @@
 
 @implementation ViewController
 
+NSString *IDs;
+NSString *Passs;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -24,4 +27,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)ButtonSignIn:(UIButton *)sender {
+    if([IDs  isEqual: @"admin"] && [Passs  isEqual: @"admin"]){
+        NSLog(@"Access Succes");
+    }
+}
+
+- (IBAction)ID:(UITextField *)IDField {
+    IDs = (NSString*)IDField.text;
+}
+
+- (IBAction)PassWord:(UITextField *)PassField{
+    Passs = (NSString*)PassField.text;
+}
 @end

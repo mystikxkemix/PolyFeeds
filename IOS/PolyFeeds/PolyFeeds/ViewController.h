@@ -10,6 +10,11 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)ButtonSignIn:(UIButton *)sender;
+
+- (IBAction)ID:(UITextField *)sender;
+
+- (IBAction)PassWord:(UITextField *)sender;
 
 @end
 
