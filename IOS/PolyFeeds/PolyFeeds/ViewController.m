@@ -27,17 +27,18 @@ NSString *Passs;
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)ButtonSignIn:(UIButton *)sender {
-    if([IDs  isEqual: @"admin"] && [Passs  isEqual: @"admin"]){
-        NSLog(@"Access Succes");
-    }
-}
 
-- (IBAction)ID:(UITextField *)IDField {
-    IDs = (NSString*)IDField.text;
-}
+- (IBAction)SignInButton:(id)sender {
+    
+    NSLog(@"Press SignIn");
+    
+    float ID = [[self.IdTextField text]floatValue];
+    float PassWord = [[self.PassWordTextField text]floatValue];
 
-- (IBAction)PassWord:(UITextField *)PassField{
-    Passs = (NSString*)PassField.text;
+    
+//    if ([IdText  isEqual: @"admin"]){
+//        NSLog(@"PassWord OK !");
+//    }
+    
 }
 @end

@@ -10,11 +10,11 @@
 
 @interface ViewController : UIViewController
 
-- (IBAction)ButtonSignIn:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UITextField *IdTextField;
 
-- (IBAction)ID:(UITextField *)sender;
+@property (weak, nonatomic) IBOutlet UITextField *PassWordTextField;
 
-- (IBAction)PassWord:(UITextField *)sender;
+- (IBAction)SignInButton:(id)sender;
 
 @end
 
