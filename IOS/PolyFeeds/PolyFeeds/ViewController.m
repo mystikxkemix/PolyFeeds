@@ -32,8 +32,8 @@ NSString *Passs;
     
     NSLog(@"Press SignIn");
     
-    float ID = [[self.IdTextField text]floatValue];
-    float PassWord = [[self.PassWordTextField text]floatValue];
+    NSString ID = [[self.IdTextField text]floatValue];
+    NSString PassWord = [[self.PassWordTextField text]floatValue];
 
     
 //    if ([IdText  isEqual: @"admin"]){
