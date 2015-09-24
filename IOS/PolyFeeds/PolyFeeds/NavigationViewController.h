@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  NavigationViewController.h
 //  PolyFeeds
 //
 //  Created by Gabin NIVERT on 24/09/2015.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *barButton;
+@interface NavigationViewController : UITableViewController
 
 @end
-
