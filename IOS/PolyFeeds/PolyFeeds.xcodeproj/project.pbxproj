@@ -20,8 +20,8 @@
 		0C476C251BB3F33D00CD15A6 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C476C241BB3F33D00CD15A6 /* SWRevealViewController.m */; };
 		0C476C281BB3FB0600CD15A6 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C476C271BB3FB0600CD15A6 /* NavigationViewController.m */; };
 		0C85AF3A1BBE876700EF510C /* Item_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C85AF391BBE876700EF510C /* Item_Icon.png */; settings = {ASSET_TAGS = (); }; };
-		0C85AF3E1BBE895300EF510C /* Icon_Item.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C85AF3D1BBE895300EF510C /* Icon_Item.png */; settings = {ASSET_TAGS = (); }; };
 		0C85AF401BBE8CC300EF510C /* Item01.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C85AF3F1BBE8CC300EF510C /* Item01.png */; settings = {ASSET_TAGS = (); }; };
+		0C8F2A1F1BBEC14E000737CA /* Icon_ItemP.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C8F2A1E1BBEC14E000737CA /* Icon_ItemP.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +56,8 @@
 		0C476C261BB3FB0600CD15A6 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
 		0C476C271BB3FB0600CD15A6 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 		0C85AF391BBE876700EF510C /* Item_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Item_Icon.png; sourceTree = "<group>"; };
-		0C85AF3D1BBE895300EF510C /* Icon_Item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_Item.png; sourceTree = "<group>"; };
 		0C85AF3F1BBE8CC300EF510C /* Item01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Item01.png; sourceTree = "<group>"; };
+		0C8F2A1E1BBEC14E000737CA /* Icon_ItemP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_ItemP.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +121,7 @@
 				0C476C1D1BB3ECC300CD15A6 /* Logo_58.png */,
 				0C476C1E1BB3ECC300CD15A6 /* Logo_80.png */,
 				0C85AF3F1BBE8CC300EF510C /* Item01.png */,
-				0C85AF3D1BBE895300EF510C /* Icon_Item.png */,
+				0C8F2A1E1BBEC14E000737CA /* Icon_ItemP.png */,
 				0C476C1F1BB3ECC300CD15A6 /* Logo_120.png */,
 				0C85AF391BBE876700EF510C /* Item_Icon.png */,
 				0C476BF51BB3EC2300CD15A6 /* Info.plist */,
@@ -231,12 +231,12 @@
 				0C476C001BB3EC2400CD15A6 /* Main.storyboard in Resources */,
 				0C476C211BB3ECC300CD15A6 /* Logo_80.png in Resources */,
 				0C85AF3A1BBE876700EF510C /* Item_Icon.png in Resources */,
+				0C8F2A1F1BBEC14E000737CA /* Icon_ItemP.png in Resources */,
 				0C476C221BB3ECC300CD15A6 /* Logo_120.png in Resources */,
 				0C85AF401BBE8CC300EF510C /* Item01.png in Resources */,
 				0C476C051BB3EC2400CD15A6 /* LaunchScreen.xib in Resources */,
 				0C476C021BB3EC2400CD15A6 /* Images.xcassets in Resources */,
 				0C476C201BB3ECC300CD15A6 /* Logo_58.png in Resources */,
-				0C85AF3E1BBE895300EF510C /* Icon_Item.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
