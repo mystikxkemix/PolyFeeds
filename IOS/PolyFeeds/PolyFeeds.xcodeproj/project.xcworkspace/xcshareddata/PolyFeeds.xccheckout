@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>01C6F294-1AE6-4C74-BA53-B64AFF047324</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>PolyFeeds</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>D71D38EF5DC0D76F8131C55645D5FD0F4B573D59</key>
 		<string>https://github.com/mystikxkemix/PolyFeeds.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>IOS/PolyFeeds/PolyFeeds.xcodeproj/project.xcworkspace</string>
+	<string>IOS/PolyFeeds/PolyFeeds.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>D71D38EF5DC0D76F8131C55645D5FD0F4B573D59</key>
