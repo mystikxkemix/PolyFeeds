@@ -1,6 +1,9 @@
 package oliva.polytech.polyfeeds;
 
 import android.app.Activity;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.ActionBar;
@@ -120,10 +123,10 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.action_example) {
             switch(num) {
                 case 1:
-                    Toast.makeText(this, "Refresh Flux", Toast.LENGTH_SHORT).show();
+                    (new NewMessageNotification()).notify(this,"Flux","Nouvelles activité\nDes Biatchs partout","Flux",0);
                     break;
                 case 2:
-                    Toast.makeText(this, "Refresh Calendrier", Toast.LENGTH_SHORT).show();
+                    (new NewMessageNotification()).notify(this, "Calendrier", "Prochain cours\nMachin - Salle truc", "Cours", 1);
                     break;
                 case 3:
                     Toast.makeText(this, "Refresh Notes", Toast.LENGTH_SHORT).show();
