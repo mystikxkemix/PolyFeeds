@@ -1,6 +1,7 @@
 package oliva.polytech.polyfeeds;
 
 import android.app.Activity;
+import android.app.ListActivity;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -20,6 +21,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
+import android.widget.CalendarView;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,6 +39,7 @@ public class MainActivity extends AppCompatActivity
      */
     private CharSequence mTitle;
     private int num;
+    private String[] cars = {"Mathematiques\nPEPO - 203\n8h30 - 10h30","Anglais\nDAMBRE - Atrium 226\n13h45 - 15h45"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +61,7 @@ public class MainActivity extends AppCompatActivity
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction()
-                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
+                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1, this.cars))
                 .commit();
     }
 
@@ -112,18 +116,18 @@ public class MainActivity extends AppCompatActivity
             //Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
             Intent intentMyAccount = new Intent(getApplicationContext(), SettingsActivity.class);
             startActivity(intentMyAccount);
-            return true;
+            return super.onOptionsItemSelected(item);
         } else  if (id == R.id.signin_settings) {
             //Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
             Intent intentMyAccount = new Intent(getApplicationContext(), LoginActivity.class);
             startActivity(intentMyAccount);
-            return true;
+            return super.onOptionsItemSelected(item);
         }
 
         if (id == R.id.action_example) {
             switch(num) {
                 case 1:
-                    (new NewMessageNotification()).notify(this,"Flux","Nouvelles activité\nDes Biatchs partout","Flux",0);
+                    (new NewMessageNotification()).notify(this, "Flux", "Nouvelles activité\nDes Biatchs partout", "Flux", 0);
                     break;
                 case 2:
                     (new NewMessageNotification()).notify(this, "Calendrier", "Prochain cours\nMachin - Salle truc", "Cours", 1);
@@ -154,13 +158,15 @@ public class MainActivity extends AppCompatActivity
          * fragment.
          */
         private static final String ARG_SECTION_NUMBER = "section_number";
+        private String cars[];
 
         /**
          * Returns a new instance of this fragment for the given section
          * number.
          */
-        public static PlaceholderFragment newInstance(int sectionNumber) {
+        public static PlaceholderFragment newInstance(int sectionNumber, final String[] cars) {
             PlaceholderFragment fragment = new PlaceholderFragment();
+            fragment.cars = cars;
             Bundle args = new Bundle();
             args.putInt(ARG_SECTION_NUMBER, sectionNumber);
             fragment.setArguments(args);
@@ -168,19 +174,25 @@ public class MainActivity extends AppCompatActivity
         }
 
         public PlaceholderFragment() {
+
         }
 
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView;
+            ListView calendar;
             switch(getArguments().getInt(ARG_SECTION_NUMBER)) {
                 case 1:
                     rootView = inflater.inflate(R.layout.flux, container, false);
                     break;
                 case 2:
-                    rootView = inflater.inflate(R.layout.calendrier, container, false);
-                    break;
+                    ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getContext(),R.layout.postitem,cars);
+                    calendar = new ListView(this.getContext());
+                    calendar.setAdapter(adapter);
+                    //rootView = inflater.inflate(R.layout.calendrier, container, false);
+                    return calendar;
+                    //break;
                 case 3:
                     rootView = inflater.inflate(R.layout.notes, container, false);
                     break;
