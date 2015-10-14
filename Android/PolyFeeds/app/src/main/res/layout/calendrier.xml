@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,15 +9,90 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
+    <!--Lundi-->
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:minHeight="50dp"
+        android:minHeight="30dp"
         android:text="Lundi"
-        android:id="@+id/textView2" />
+        android:id="@+id/textViewLundi"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:textColor="#010101"
+        android:textSize="20dp" />
     <ListView
-        android:id="@+id/postListView"
+        android:id="@+id/postListViewLundi"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/textViewLundi"
+        android:layout_alignParentStart="false" />
+
+    <!--Mardi-->
+    <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2" />
+        android:minHeight="30dp"
+        android:text="Mardi"
+        android:layout_below="@+id/postListViewLundi"
+        android:id="@+id/textViewMardi"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:textColor="#010101"
+        android:textSize="20dp" />
+    <ListView
+        android:id="@+id/postListViewMardi"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/textViewMardi" />
+
+    <!--Mercredi-->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:text="Mercredi"
+        android:layout_below="@+id/postListViewMardi"
+        android:id="@+id/textViewMercredi"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:textColor="#010101"
+        android:textSize="20dp" />
+    <ListView
+        android:id="@+id/postListViewMercredi"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/textViewMercredi" />
+
+    <!--Jeudi-->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:text="Jeudi"
+        android:layout_below="@+id/postListViewMercredi"
+        android:id="@+id/textViewJeudi"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:textColor="#010101"
+        android:textSize="20dp" />
+    <ListView
+        android:id="@+id/postListViewJeudi"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/textViewJeudi" />
+
+    <!--Vendredi-->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:text="Vendredi"
+        android:layout_below="@+id/postListViewJeudi"
+        android:id="@+id/textViewVendredi"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:textColor="#010101"
+        android:textSize="20dp" />
+    <ListView
+        android:id="@+id/postListViewVendredi"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/textViewVendredi" />
+
+
 </RelativeLayout>

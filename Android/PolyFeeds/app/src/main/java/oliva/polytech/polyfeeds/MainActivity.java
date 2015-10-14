@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity
      */
     private CharSequence mTitle;
     private int num;
-    private String[] cars = {"Mathematiques\nPEPO - 203\n8h30 - 10h30","Anglais\nDAMBRE - Atrium 226\n13h45 - 15h45"};
+    private String[] classLundi = {"Mathematiques\nPEPO - 203\n8h30 - 10h30","Anglais\nDAMBRE - Atrium 226\n13h45 - 15h45"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction()
-                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1, this.cars))
+                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1, this.classLundi, this))
                 .commit();
     }
 
@@ -158,15 +158,17 @@ public class MainActivity extends AppCompatActivity
          * fragment.
          */
         private static final String ARG_SECTION_NUMBER = "section_number";
-        private String cars[];
-
+        private String classLundi[];
+        private String empty[] = {"\n\nAucun Cour\n\n"};
+        private MainActivity app;
         /**
          * Returns a new instance of this fragment for the given section
          * number.
          */
-        public static PlaceholderFragment newInstance(int sectionNumber, final String[] cars) {
+        public static PlaceholderFragment newInstance(int sectionNumber, final String[] classLundi, final MainActivity app) {
             PlaceholderFragment fragment = new PlaceholderFragment();
-            fragment.cars = cars;
+            fragment.classLundi = classLundi;
+            fragment.app = app;
             Bundle args = new Bundle();
             args.putInt(ARG_SECTION_NUMBER, sectionNumber);
             fragment.setArguments(args);
@@ -181,17 +183,29 @@ public class MainActivity extends AppCompatActivity
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView;
-            ListView calendar;
+            ListView calendar[] = new ListView[5];
             switch(getArguments().getInt(ARG_SECTION_NUMBER)) {
                 case 1:
                     rootView = inflater.inflate(R.layout.flux, container, false);
                     break;
                 case 2:
-                    ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getContext(),R.layout.postitem,cars);
-                    calendar = new ListView(this.getContext());
-                    calendar.setAdapter(adapter);
-                    //rootView = inflater.inflate(R.layout.calendrier, container, false);
-                    return calendar;
+                    rootView = inflater.inflate(R.layout.calendrier, container, false);
+                    calendar[0] = (ListView) rootView.findViewById(R.id.postListViewLundi);
+                    calendar[0].setAdapter( new ArrayAdapter<String>(this.getContext(),R.layout.postitem,classLundi));
+
+                    calendar[1] = (ListView) rootView.findViewById(R.id.postListViewMardi);
+                    calendar[1].setAdapter(new ArrayAdapter<String>(this.getContext(), R.layout.postitem, empty ));
+
+                    calendar[2] = (ListView) rootView.findViewById(R.id.postListViewMercredi);
+                    calendar[2].setAdapter(new ArrayAdapter<String>(this.getContext(), R.layout.postitem, classLundi));
+
+                    calendar[3] = (ListView) rootView.findViewById(R.id.postListViewJeudi);
+                    calendar[3].setAdapter(new ArrayAdapter<String>(this.getContext(), R.layout.postitem, classLundi));
+
+                    calendar[4] = (ListView) rootView.findViewById(R.id.postListViewVendredi);
+                    calendar[4].setAdapter(new ArrayAdapter<String>(this.getContext(), R.layout.postitem, classLundi));
+
+                    return rootView;
                     //break;
                 case 3:
                     rootView = inflater.inflate(R.layout.notes, container, false);

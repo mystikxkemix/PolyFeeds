@@ -3,10 +3,10 @@
     android:id="@+id/postTitle"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:maxLines="3"
-    android:minHeight="150dp"
+    android:maxLines="5"
+    android:minHeight="40dp"
     android:textIsSelectable="false"
-    android:textSize="30sp"
+    android:textSize="12sp"
     android:textAlignment="center"
     android:textColor="#ffffffff"
     android:textColorHighlight="#00000000"
@@ -14,6 +14,8 @@
     android:focusableInTouchMode="false"
     android:longClickable="false"
     android:linksClickable="false"
-    android:gravity="center_vertical|center|center_horizontal">
+    android:gravity="center_vertical|center|center_horizontal"
+    android:layout_below="@+id/textVi"
+    android:layout_alignParentStart="true">
 
 </TextView>
