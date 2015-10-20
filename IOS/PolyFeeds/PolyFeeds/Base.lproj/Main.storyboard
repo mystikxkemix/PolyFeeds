@@ -217,6 +217,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <navigationItem key="navigationItem" title="Actualités" id="TtJ-8R-McS">
                         <barButtonItem key="leftBarButtonItem" image="Icon_ItemP.png" style="done" id="7aw-mO-lMk">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -230,6 +231,11 @@
                             <connections>
                                 <segue destination="XeD-O0-Swt" kind="show" id="sQS-3E-61Q"/>
                             </connections>
+=======
+                    <navigationItem key="navigationItem" id="TtJ-8R-McS">
+                        <barButtonItem key="leftBarButtonItem" image="Item_Icon.png" style="done" id="7aw-mO-lMk">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+>>>>>>> parent of 79e461a... Update IOS 1.2
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -241,6 +247,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C3G-Tg-Rnl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1431.5" y="780.5"/>
+<<<<<<< HEAD
         </scene>
         <!--View Controller-->
         <scene sceneID="Fej-n7-4td">
@@ -291,6 +298,8 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K5W-Xg-BFg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1921.5" y="976.5"/>
+=======
+>>>>>>> parent of 79e461a... Update IOS 1.2
         </scene>
         <!--View Controller-->
         <scene sceneID="Kfp-SP-phN">

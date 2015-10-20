@@ -23,9 +23,12 @@
 		0C85AF3E1BBE895300EF510C /* Icon_Item.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C85AF3D1BBE895300EF510C /* Icon_Item.png */; settings = {ASSET_TAGS = (); }; };
 		0C85AF401BBE8CC300EF510C /* Item01.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C85AF3F1BBE8CC300EF510C /* Item01.png */; settings = {ASSET_TAGS = (); }; };
 <<<<<<< HEAD
+<<<<<<< HEAD
 		0C8F2A1F1BBEC14E000737CA /* Icon_ItemP.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C8F2A1E1BBEC14E000737CA /* Icon_ItemP.png */; settings = {ASSET_TAGS = (); }; };
 		0CA3E3BF1BD6492B008F12A5 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA3E3BE1BD6492B008F12A5 /* libsqlite3.tbd */; };
 		0CA3E3C21BD6499C008F12A5 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3E3C11BD6499C008F12A5 /* DBManager.m */; settings = {ASSET_TAGS = (); }; };
+=======
+>>>>>>> parent of 79e461a... Update IOS 1.2
 =======
 >>>>>>> parent of 79e461a... Update IOS 1.2
 /* End PBXBuildFile section */
@@ -65,10 +68,13 @@
 		0C85AF3D1BBE895300EF510C /* Icon_Item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_Item.png; sourceTree = "<group>"; };
 		0C85AF3F1BBE8CC300EF510C /* Item01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Item01.png; sourceTree = "<group>"; };
 <<<<<<< HEAD
+<<<<<<< HEAD
 		0C8F2A1E1BBEC14E000737CA /* Icon_ItemP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_ItemP.png; sourceTree = "<group>"; };
 		0CA3E3BE1BD6492B008F12A5 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		0CA3E3C01BD6499C008F12A5 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
 		0CA3E3C11BD6499C008F12A5 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+=======
+>>>>>>> parent of 79e461a... Update IOS 1.2
 =======
 >>>>>>> parent of 79e461a... Update IOS 1.2
 /* End PBXFileReference section */
