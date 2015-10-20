@@ -24,7 +24,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dfl-jP-uDV">
+                            <textField opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Dfl-jP-uDV">
                                 <rect key="frame" x="116" y="124" width="142" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -42,7 +42,7 @@
                                 <state key="normal" title="Sign In"/>
                                 <connections>
                                     <action selector="PassButton:" destination="Mly-67-MTp" eventType="touchUpInside" id="3LE-XG-L73"/>
-                                    <segue destination="vXZ-lx-hvc" kind="modal" identifier="Button_SignIn" id="frd-s9-BJs"/>
+                                    <segue destination="vXZ-lx-hvc" kind="show" customClass="SWRevealViewControllerSegue" id="aEb-wP-glU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -73,6 +73,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="egb-T4-Ksn"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <segue destination="tsi-2E-1pB" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegue" id="oxJ-pY-O2f"/>
@@ -260,25 +261,25 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zh-nD-GUW">
-                                <rect key="frame" x="111" y="587" width="171" height="30"/>
-                                <animations/>
-                                <state key="normal" title="A propos"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OlV-bp-sZ1">
-                                <rect key="frame" x="111" y="531" width="171" height="30"/>
+                                <rect key="frame" x="102" y="212" width="171" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Compte &amp; Connexions"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ve3-Ol-AlD">
-                                <rect key="frame" x="120" y="467" width="171" height="30"/>
+                                <rect key="frame" x="102" y="156" width="171" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Evénement du calendrier"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjH-6L-xZt">
-                                <rect key="frame" x="169" y="350" width="54" height="30"/>
+                                <rect key="frame" x="160" y="103" width="54" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Général"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zh-nD-GUW">
+                                <rect key="frame" x="102" y="287" width="171" height="30"/>
+                                <animations/>
+                                <state key="normal" title="A propos"/>
                             </button>
                         </subviews>
                         <animations/>

@@ -22,6 +22,8 @@
 		0C85AF3A1BBE876700EF510C /* Item_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C85AF391BBE876700EF510C /* Item_Icon.png */; settings = {ASSET_TAGS = (); }; };
 		0C85AF401BBE8CC300EF510C /* Item01.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C85AF3F1BBE8CC300EF510C /* Item01.png */; settings = {ASSET_TAGS = (); }; };
 		0C8F2A1F1BBEC14E000737CA /* Icon_ItemP.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C8F2A1E1BBEC14E000737CA /* Icon_ItemP.png */; settings = {ASSET_TAGS = (); }; };
+		0CA3E3BF1BD6492B008F12A5 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA3E3BE1BD6492B008F12A5 /* libsqlite3.tbd */; };
+		0CA3E3C21BD6499C008F12A5 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3E3C11BD6499C008F12A5 /* DBManager.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,9 @@
 		0C85AF391BBE876700EF510C /* Item_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Item_Icon.png; sourceTree = "<group>"; };
 		0C85AF3F1BBE8CC300EF510C /* Item01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Item01.png; sourceTree = "<group>"; };
 		0C8F2A1E1BBEC14E000737CA /* Icon_ItemP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_ItemP.png; sourceTree = "<group>"; };
+		0CA3E3BE1BD6492B008F12A5 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		0CA3E3C01BD6499C008F12A5 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		0CA3E3C11BD6499C008F12A5 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CA3E3BF1BD6492B008F12A5 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +87,9 @@
 		0C476BE81BB3EC2300CD15A6 = {
 			isa = PBXGroup;
 			children = (
+				0CA3E3C01BD6499C008F12A5 /* DBManager.h */,
+				0CA3E3C11BD6499C008F12A5 /* DBManager.m */,
+				0CA3E3BE1BD6492B008F12A5 /* libsqlite3.tbd */,
 				0C476BF31BB3EC2300CD15A6 /* PolyFeeds */,
 				0C476C0D1BB3EC2400CD15A6 /* PolyFeedsTests */,
 				0C476BF21BB3EC2300CD15A6 /* Products */,
@@ -257,6 +266,7 @@
 				0C476BFD1BB3EC2400CD15A6 /* ViewController.m in Sources */,
 				0C476BFA1BB3EC2400CD15A6 /* AppDelegate.m in Sources */,
 				0C476C281BB3FB0600CD15A6 /* NavigationViewController.m in Sources */,
+				0CA3E3C21BD6499C008F12A5 /* DBManager.m in Sources */,
 				0C476BF71BB3EC2300CD15A6 /* main.m in Sources */,
 				0C476C251BB3F33D00CD15A6 /* SWRevealViewController.m in Sources */,
 			);
