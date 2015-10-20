@@ -8,20 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController{
-    
-    IBOutlet UITextField *IDField;
-    IBOutlet UITextField *PassWordField;
-        
-    NSDictionary *infodictionary;
-    
-}
-
-- (IBAction)PassButton:(id)sender;
+@interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *barButton;
-
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *ReglageButton;
 
 @end
 
