@@ -18,14 +18,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PolyFeeds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bde-P1-ZeB">
-                                <rect key="frame" x="93" y="67" width="188" height="49"/>
+                                <rect key="frame" x="93" y="52" width="188" height="49"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dfl-jP-uDV">
+                                <rect key="frame" x="116" y="152" width="142" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PassWord" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o9u-e9-0a9">
+                                <rect key="frame" x="116" y="235" width="142" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yg6-2x-FY8">
-                                <rect key="frame" x="142" y="499" width="91" height="53"/>
+                                <rect key="frame" x="142" y="316" width="91" height="53"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Sign In"/>
@@ -33,18 +45,6 @@
                                     <segue destination="vXZ-lx-hvc" kind="show" id="3kl-iS-iNb"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dfl-jP-uDV">
-                                <rect key="frame" x="116" y="222" width="142" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PassWord" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o9u-e9-0a9">
-                                <rect key="frame" x="116" y="352" width="142" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -295,7 +295,7 @@
             </objects>
             <point key="canvasLocation" x="1431.5" y="232.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Notes-->
         <scene sceneID="aRK-In-iYR">
             <objects>
                 <viewController id="IZU-z2-yJq" customClass="ViewController" sceneMemberID="viewController">
@@ -318,7 +318,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="S1r-2i-0fU">
+                    <navigationItem key="navigationItem" title="Notes" id="S1r-2i-0fU">
                         <barButtonItem key="leftBarButtonItem" image="Icon_ItemP.png" style="done" id="EVR-zy-fw4">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
@@ -337,6 +337,6 @@
         <image name="Icon_ItemP.png" width="30" height="23"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1wi-tS-Qdr"/>
+        <segue reference="JYv-vH-amb"/>
     </inferredMetricsTieBreakers>
 </document>

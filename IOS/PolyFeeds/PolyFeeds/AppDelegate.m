@@ -26,8 +26,12 @@
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    UILocalNotification *notification = [[UILocalNotification alloc]init];
+    [notification setAlertBody:@"Vous avez une notification !"];
+    [notification setFireDate:[NSDate dateWithTimeIntervalSinceNow:5]];
+    [notification setTimeZone:[NSTimeZone defaultTimeZone]];
+    [application setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {

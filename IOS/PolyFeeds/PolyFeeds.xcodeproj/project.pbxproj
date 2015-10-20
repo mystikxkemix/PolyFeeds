@@ -22,6 +22,7 @@
 		0C85AF3A1BBE876700EF510C /* Item_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C85AF391BBE876700EF510C /* Item_Icon.png */; settings = {ASSET_TAGS = (); }; };
 		0C85AF401BBE8CC300EF510C /* Item01.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C85AF3F1BBE8CC300EF510C /* Item01.png */; settings = {ASSET_TAGS = (); }; };
 		0C8F2A1F1BBEC14E000737CA /* Icon_ItemP.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C8F2A1E1BBEC14E000737CA /* Icon_ItemP.png */; settings = {ASSET_TAGS = (); }; };
+		0CB729531BD6705C00EF215B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB729521BD6705C00EF215B /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		0C85AF391BBE876700EF510C /* Item_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Item_Icon.png; sourceTree = "<group>"; };
 		0C85AF3F1BBE8CC300EF510C /* Item01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Item01.png; sourceTree = "<group>"; };
 		0C8F2A1E1BBEC14E000737CA /* Icon_ItemP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_ItemP.png; sourceTree = "<group>"; };
+		0CB729521BD6705C00EF215B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CB729531BD6705C00EF215B /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		0C476BE81BB3EC2300CD15A6 = {
 			isa = PBXGroup;
 			children = (
+				0CB729521BD6705C00EF215B /* libsqlite3.tbd */,
 				0C476BF31BB3EC2300CD15A6 /* PolyFeeds */,
 				0C476C0D1BB3EC2400CD15A6 /* PolyFeedsTests */,
 				0C476BF21BB3EC2300CD15A6 /* Products */,
