@@ -1,20 +1,17 @@
 package oliva.polytech.polyfeeds;
 
 import android.app.Activity;
-import android.app.ListActivity;
-import android.app.Notification;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
-import android.bluetooth.le.BluetoothLeScanner;
+import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothManager;
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.content.Context;
-import android.os.Build;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -22,10 +19,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
-import android.widget.CalendarView;
+import android.widget.BaseAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
@@ -34,6 +32,11 @@ public class MainActivity extends AppCompatActivity
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
      */
     private NavigationDrawerFragment mNavigationDrawerFragment;
+    private LeDeviceListAdapter mLeDeviceListAdapter;
+    private BluetoothAdapter mBluetoothAdapter;
+    private boolean mScanning;
+    private Handler mHandler;
+    private static final int REQUEST_ENABLE_BT = 1;
 
     /**
      * Used to store the last screen title. For use in {@link #restoreActionBar()}.
@@ -61,6 +64,11 @@ public class MainActivity extends AppCompatActivity
                 startActivity(new Intent(MainActivity.this, SettingsActivity.class));
             }
         });
+
+        mHandler = new Handler();
+        final BluetoothManager bluetoothManager =
+                (BluetoothManager) getSystemService(Context.BLUETOOTH_SERVICE);
+        mBluetoothAdapter = bluetoothManager.getAdapter();
     }
 
     @Override
@@ -130,10 +138,10 @@ public class MainActivity extends AppCompatActivity
             startActivity(intentMyAccount);
             return super.onOptionsItemSelected(item);
         } else  if (id == R.id.BLE_List) {
-            //Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
-            Intent intentMyAccount = new Intent(getApplicationContext(), BLEScan.class);
-            startActivity(intentMyAccount);
-            return super.onOptionsItemSelected(item);
+//            Toast.makeText(this, "BLE", Toast.LENGTH_SHORT).show();
+            mLeDeviceListAdapter = new LeDeviceListAdapter();
+            scanLeDevice(true);
+            Toast.makeText(this, Integer.toString(mLeDeviceListAdapter.getCount()), Toast.LENGTH_SHORT).show();
         }
 
         if (id == R.id.action_example) {
@@ -159,6 +167,21 @@ public class MainActivity extends AppCompatActivity
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // Ensures Bluetooth is enabled on the device.  If Bluetooth is not currently enabled,
+        // fire an intent to display a dialog asking the user to grant permission to enable it.
+        if (!(mBluetoothAdapter==null)) {
+            if (!mBluetoothAdapter.isEnabled()) {
+                Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+                startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
+            }
+        }
+        // Initializes list view adapter.
+
     }
 
     /**
@@ -239,5 +262,83 @@ public class MainActivity extends AppCompatActivity
                     getArguments().getInt(ARG_SECTION_NUMBER));
         }
     }
+    private static final long SCAN_PERIOD = 10000;
+
+    private void scanLeDevice(final boolean enable) {
+        if (enable) {
+            // Stops scanning after a pre-defined scan period.
+            mHandler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    mScanning = false;
+                    mBluetoothAdapter.stopLeScan(mLeScanCallback);
+                }
+            }, SCAN_PERIOD);
+            mScanning = true;
+            mBluetoothAdapter.startLeScan(mLeScanCallback);
+        } else {
+            mScanning = false;
+            mBluetoothAdapter.stopLeScan(mLeScanCallback);
+        }
+
+    }
+
+    private BluetoothAdapter.LeScanCallback mLeScanCallback =
+            new BluetoothAdapter.LeScanCallback() {
+
+                @Override
+                public void onLeScan(final BluetoothDevice device, int rssi, byte[] scanRecord) {
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            mLeDeviceListAdapter.addDevice(device);
+                            mLeDeviceListAdapter.notifyDataSetChanged();
+                        }
+                    });
+                }
+            };
+
+}
+
+class LeDeviceListAdapter extends BaseAdapter {
+    private ArrayList<BluetoothDevice> mLeDevices;
+    private LayoutInflater mInflator;
+
+    public LeDeviceListAdapter() {
+        super();
+        mLeDevices = new ArrayList<BluetoothDevice>();
+    }
+
+    public void addDevice(BluetoothDevice device) {
+        if (!mLeDevices.contains(device)) {
+            mLeDevices.add(device);
+        }
+    }
+
+    public BluetoothDevice getDevice(int position) {
+        return mLeDevices.get(position);
+    }
+
+    public void clear() {
+        mLeDevices.clear();
+    }
+
+    @Override
+    public int getCount() {
+        return mLeDevices.size();
+    }
+
+    @Override
+    public Object getItem(int i) {
+        return mLeDevices.get(i);
+    }
+
+    @Override
+    public long getItemId(int i) {
+        return i;
+    }
+
+    @Override
+    public View getView(int i, View view, ViewGroup viewGroup) {return view;}
 
 }
