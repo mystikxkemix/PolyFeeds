@@ -5,6 +5,9 @@
         app:showAsAction="withText|ifRoom" />
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/BLE_List" android:title="BLE Scan"
+        android:orderInCategory="100" app:showAsAction="never" />
     <item android:id="@+id/signin_settings" android:title="@string/signin_settings"
         android:orderInCategory="100" app:showAsAction="never" />
 </menu>

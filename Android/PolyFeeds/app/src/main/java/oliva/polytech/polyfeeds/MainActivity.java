@@ -5,6 +5,7 @@ import android.app.ListActivity;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.bluetooth.le.BluetoothLeScanner;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.ActionBar;
@@ -54,6 +55,12 @@ public class MainActivity extends AppCompatActivity
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
+        findViewById(R.id.container).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SettingsActivity.class));
+            }
+        });
     }
 
     @Override
@@ -120,6 +127,11 @@ public class MainActivity extends AppCompatActivity
         } else  if (id == R.id.signin_settings) {
             //Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
             Intent intentMyAccount = new Intent(getApplicationContext(), LoginActivity.class);
+            startActivity(intentMyAccount);
+            return super.onOptionsItemSelected(item);
+        } else  if (id == R.id.BLE_List) {
+            //Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
+            Intent intentMyAccount = new Intent(getApplicationContext(), BLEScan.class);
             startActivity(intentMyAccount);
             return super.onOptionsItemSelected(item);
         }
