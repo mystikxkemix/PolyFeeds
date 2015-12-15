@@ -20,6 +20,7 @@ import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity
     private boolean mScanning;
     private Handler mHandler;
     private static final int REQUEST_ENABLE_BT = 1;
+    private EditText usernameField,passwordField;
 
     /**
      * Used to store the last screen title. For use in {@link #restoreActionBar()}.
@@ -134,8 +136,9 @@ public class MainActivity extends AppCompatActivity
             return super.onOptionsItemSelected(item);
         } else  if (id == R.id.signin_settings) {
             //Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
-            Intent intentMyAccount = new Intent(getApplicationContext(), LoginActivity.class);
-            startActivity(intentMyAccount);
+            //Intent intentMyAccount = new Intent(getApplicationContext(), LoginActivity.class);
+            //startActivity(intentMyAccount);
+
             return super.onOptionsItemSelected(item);
         } else  if (id == R.id.BLE_List) {
 //            Toast.makeText(this, "BLE", Toast.LENGTH_SHORT).show();
@@ -180,7 +183,10 @@ public class MainActivity extends AppCompatActivity
                 startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
             }
         }
-        // Initializes list view adapter.
+
+        if(mBluetoothAdapter.isEnabled()){
+
+        }
 
     }
 
