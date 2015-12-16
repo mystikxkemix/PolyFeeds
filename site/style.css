@@ -1,0 +1,159 @@
+
+table.agents
+{
+    border-collapse:collapse;
+    width:100%;
+    //max-width:1000px;
+    min-width:400px;
+    text-align:center;
+    font-size:14px;
+    margin-bottom: 15px;
+    color: #636363;
+    margin: auto;
+
+}
+
+table.agents,th, td.agents
+{
+    border: 1px solid gray;
+}
+
+th, td
+{
+    height: 24px;
+    min-width:50px;
+    padding:4px;
+    vertical-align:middle;
+}
+
+body {
+    background-color: #EFEFEF;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    letter-spacing: 0px;
+    font-weight:bold;
+    color:blue;
+}
+a {
+    text-decoration:none;
+}
+#onglets
+{
+    font : bold 11px Batang, arial, serif;
+    list-style-type : none;
+    padding-bottom : 24px; /* à modifier suivant la taille de la police ET de la hauteur de l'onglet dans #onglets li */
+    border-bottom : 1px solid #9EA0A1;
+    margin-left : 0;
+}
+
+#onglets li
+{
+    float : left;
+    height : 21px; /* à modifier suivant la taille de la police pour centrer le texte dans l'onglet */
+    background-color: #F4F9FD;
+    margin : 2px 2px 0 2px;
+    border : 1px solid #9EA0A1;
+}
+
+#onglets li.active
+{
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+}
+
+#onglets a
+{
+    display : block;
+    color : #666;
+    text-decoration : none;
+    padding : 4px;
+}
+
+#onglets a:hover
+{
+    background : #fff;
+}
+
+
+
+#semaine
+{
+    font : bold 11px Batang, arial, serif;
+    list-style-type : none;
+    padding-bottom : 22px; /* à modifier suivant la taille de la police ET de la hauteur de l'onglet dans #onglets li */
+    border-bottom : 1px solid #9EA0A1;
+    margin-left : 0;
+}
+
+#semaine li
+{
+    float : left;
+    height : 19px; /* à modifier suivant la taille de la police pour centrer le texte dans l'onglet */
+    //width: 150px;
+    background-color: #F4F9FD;
+    margin : 2px 2px 0 2px;
+    border : 1px solid #9EA0A1;
+    text-align: center;
+}
+
+#semaine li.active
+{
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+}
+
+#semaine a
+{
+    display : block;
+    color : #666;
+    text-decoration : none;
+    padding : 4px;
+}
+
+#semaine a:hover
+{
+    background : #fff;
+}
+
+
+
+
+
+
+#tab_note
+{
+    border-collapse: collapse;
+}
+
+#tab_note td
+{
+    border : 1px solid black;
+    text-align: center;
+}
+
+#tab_note thead
+{
+    background-color: #666;
+    text-align: center;
+    color: black; 
+    text-shadow: skyblue 0px 2px, skyblue 2px 0px, skyblue -2px 0px, 
+    skyblue 0px -2px, skyblue -1.4px -1.4px, skyblue 1.4px 1.4px, 
+    skyblue 1.4px -1.4px, skyblue -1.4px 1.4px; 
+}
+
+#tab_note tbody
+{
+    background-color: #9EA0C1;
+    text-align: right;
+    
+}
+
